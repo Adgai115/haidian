@@ -9,92 +9,146 @@
       "status": "known",
       "value": 11412825.386,
       "unit": "sqm",
-      "source_files": ["geometry/site_boundary.geojson"],
+      "source_files": [
+        "geometry/site_boundary.geojson"
+      ],
       "formula": "polygon_area(submitted_site_boundary)",
       "confidence": "medium",
-      "assumptions": ["Submitted SITE_BOUNDARY is a repository-maintained provisional rough polygon, not an official redline."]
+      "assumptions": [
+        "A-BOUNDARY-001"
+      ],
+      "note_zh": "基于 provisional boundary（PROV-SITE-001）复算；官方红线发布后必须重算。"
     },
     "building_footprint_area_sqm": {
-      "status": "known",
-      "value": 310807.184,
+      "status": "proposed",
+      "value": 285000,
       "unit": "sqm",
-      "source_files": ["geometry/buildings.geojson"],
+      "source_files": [
+        "geometry/buildings.geojson"
+      ],
       "formula": "sum(polygon_area(building_footprints))",
-      "confidence": "medium",
-      "assumptions": []
+      "confidence": "low",
+      "assumptions": [
+        "A-BUILDING-001",
+        "A-CONTROLS-001"
+      ],
+      "note_zh": "概念建议值（BLDG-001/002/003 合计），非审定建筑规模；待正式控规与现状建筑资料确认。"
     },
     "green_ratio": {
-      "status": "known",
-      "value": 0.123423,
+      "status": "proposed",
+      "value": 0.15,
       "unit": "ratio",
-      "source_files": ["geometry/green_space.geojson", "geometry/site_boundary.geojson"],
+      "source_files": [
+        "geometry/green_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
       "formula": "green_space_area_sqm / site_area_sqm",
-      "confidence": "medium",
-      "assumptions": []
+      "confidence": "low",
+      "assumptions": [
+        "A-RATIOS-001",
+        "A-BOUNDARY-001"
+      ],
+      "note_zh": "概念目标比例，绿地面积按 0.15×site_area 概念对齐；官方边界与绿地系统确定后重算。"
     },
     "public_space_ratio": {
-      "status": "known",
-      "value": 0.073281,
+      "status": "proposed",
+      "value": 0.08,
       "unit": "ratio",
-      "source_files": ["geometry/public_space.geojson", "geometry/site_boundary.geojson"],
+      "source_files": [
+        "geometry/public_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
       "formula": "public_space_area_sqm / site_area_sqm",
-      "confidence": "medium",
-      "assumptions": []
+      "confidence": "low",
+      "assumptions": [
+        "A-RATIOS-001",
+        "A-BOUNDARY-001"
+      ],
+      "note_zh": "概念目标比例，公共空间面积按 0.08×site_area 概念对齐；官方边界确定后重算。"
     },
     "floor_area_ratio": {
       "status": "unknown",
       "value": null,
       "unit": "ratio",
-      "source_files": ["brief/site-package/ranges/planning_limits.json"],
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
       "formula": "total_floor_area_sqm / official_site_area_sqm",
       "confidence": "unknown",
-      "assumptions": [],
-      "reason": "Approved FAR controls and official site boundary are not present in the public site package."
+      "assumptions": [
+        "A-FAR-001",
+        "A-CONTROLS-001"
+      ],
+      "reason": "容积率属法定控规管控指标，官方控规与正式边界尚未公开，不得以设计建议值冒充审定指标。"
     },
     "key_area_count": {
       "status": "known",
       "value": 3,
       "unit": "count",
-      "source_files": ["geometry/key_areas.geojson"],
+      "source_files": [
+        "geometry/key_areas.geojson"
+      ],
       "formula": "count(key_detailed_design_areas)",
       "confidence": "high",
-      "assumptions": []
+      "assumptions": [
+        "A-BOUNDARY-001"
+      ],
+      "note_zh": "三处重点片区：众智园AI自主创新加速区、北京AI原点社区、大钟寺AI产业聚集区。"
     },
     "scenario_card_count": {
       "status": "known",
       "value": 10,
       "unit": "count",
-      "source_files": ["proposal.md"],
-      "formula": "count(scenario_cards)",
+      "source_files": [
+        "proposal.md",
+        "report/proposal.html"
+      ],
+      "formula": "count(ai_scenario_cards)",
       "confidence": "high",
-      "assumptions": []
+      "assumptions": [],
+      "note_zh": "面向智能体任务书要求不少于10张AI场景卡；正文场景卡 01-10 全部落位空间图层。"
     },
     "persona_count": {
       "status": "known",
       "value": 5,
       "unit": "count",
-      "source_files": ["proposal.md"],
+      "source_files": [
+        "proposal.md",
+        "report/proposal.html"
+      ],
       "formula": "count(user_personas)",
       "confidence": "high",
-      "assumptions": []
+      "assumptions": [],
+      "note_zh": "任务书要求不少于5类用户画像：开源开发者、初创团队、头部企业访客、周边居民、高校师生。"
     },
     "landmark_count": {
-      "status": "known",
+      "status": "proposed",
       "value": 3,
       "unit": "count",
-      "source_files": ["proposal.md"],
-      "formula": "count(ai_landmarks)",
-      "confidence": "high",
-      "assumptions": []
+      "source_files": [
+        "proposal.md",
+        "geometry/public_space.geojson"
+      ],
+      "formula": "count(proposed_ai_pilgrimage_landmarks)",
+      "confidence": "low",
+      "assumptions": [
+        "A-OPERATION-001"
+      ],
+      "note_zh": "三处概念性朝圣/地标节点（京张遗址文化锚点、开源发布地标、国际路演地标），为概念建议，非已批准设施。"
     },
     "case_study_count": {
       "status": "known",
       "value": 6,
       "unit": "count",
-      "source_files": ["proposal.md"],
-      "formula": "count(global_case_studies)",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(renewal_project_list)",
       "confidence": "high",
-      "assumptions": []
+      "assumptions": [
+        "A-CONTROLS-001"
+      ],
+      "note_zh": "更新项目清单 JZ-01 至 JZ-06，与 phasing/图层挂接。"
     }
   }
 }

@@ -23,13 +23,13 @@
       "id": "BOUNDARY-SOURCE",
       "path": "brief/site-package/geometry/provisional_boundaries.geojson",
       "source_type": "agent_inferred_from_public_data",
-      "usage": "Submitted site boundary geometry source (provisional)."
+      "usage": "Submitted site boundary geometry source (provisional); PROV-SITE-001 derived here."
     },
     {
       "id": "KEY-AREA-SOURCE",
       "path": "brief/site-package/geometry/provisional_boundaries.geojson",
       "source_type": "agent_inferred_from_public_data",
-      "usage": "Three required detailed-design key area boundaries (provisional)."
+      "usage": "Three required detailed-design key area boundaries (provisional); PROV-KEY-001/002/003 derived here."
     },
     {
       "id": "OFFICIAL-ANNOUNCEMENT",
@@ -41,7 +41,13 @@
       "id": "AGENT-TASKBOOK",
       "path": "brief/site-package/agent_taskbook.json",
       "source_type": "user_provided_cleared",
-      "usage": "Agent-facing open-call principles, six required agent tasks, scenario/branding/operation requirements, and boundary clause."
+      "usage": "Agent-facing open-call principles, six required agent tasks (agent.1-agent.6), scenario/branding/operation requirements, and boundary clause."
+    },
+    {
+      "id": "OFFICIAL-PACKAGE-PAGE",
+      "url": "http://www.bkpmzb.com/bidding/display.php?oid=257&pid=2894",
+      "source_type": "official_public",
+      "usage": "Qualification package download page (password-protected); no public precise boundary file found as of 2026-08-07."
     }
   ]
 }

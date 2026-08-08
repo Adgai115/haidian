@@ -1,6 +1,6 @@
 {
   "type": "FeatureCollection",
-  "name": "building_footprints_scaffold",
+  "name": "jingzhang_building_footprints_concept",
   "features": [
     {
       "type": "Feature",
@@ -8,36 +8,139 @@
       "properties": {
         "id": "BLDG-001",
         "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
         "building_type": "ai_r_and_d",
-        "name_zh": "AI研发示范建筑基底",
-        "area_sqm_declared": 310807.184
+        "name_zh": "众智园AI研发示范建筑群（概念）",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "official_boundary": false,
+        "geometry_role": "provisional_constraint",
+        "source_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+        "derived_from_source_ids": [
+          "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
+        ],
+        "area_sqm_declared": 120000,
+        "building_status": "concept_suggestion",
+        "usage_note": "概念建议建筑基底，合计285,000平方米；非审定建筑规模，待现状建筑调查与控规确认。"
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.341572,
-              39.95475
+              116.3445,
+              40.009
             ],
             [
-              116.341572,
-              39.97225
+              116.3505,
+              40.009
             ],
             [
-              116.34344399999999,
-              39.97225
+              116.3505,
+              40.019
             ],
             [
-              116.34344399999999,
-              39.95475
+              116.3445,
+              40.019
             ],
             [
-              116.341572,
-              39.95475
+              116.3445,
+              40.009
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-002",
+      "properties": {
+        "id": "BLDG-002",
+        "layer": "BUILDING_FOOTPRINT",
+        "building_type": "innovation_service",
+        "name_zh": "原点社区成果转化与人才服务建筑群（概念）",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "official_boundary": false,
+        "geometry_role": "provisional_constraint",
+        "source_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+        "derived_from_source_ids": [
+          "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
+        ],
+        "area_sqm_declared": 90000,
+        "building_status": "concept_suggestion",
+        "usage_note": "概念建议建筑基底，合计285,000平方米；非审定建筑规模，待现状建筑调查与控规确认。"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3435,
+              39.9845
+            ],
+            [
+              116.3505,
+              39.9845
+            ],
+            [
+              116.3505,
+              39.9925
+            ],
+            [
+              116.3435,
+              39.9925
+            ],
+            [
+              116.3435,
+              39.9845
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-003",
+      "properties": {
+        "id": "BLDG-003",
+        "layer": "BUILDING_FOOTPRINT",
+        "building_type": "smart_economy_complex",
+        "name_zh": "大钟寺智能经济与商业综合体（概念）",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "official_boundary": false,
+        "geometry_role": "provisional_constraint",
+        "source_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+        "derived_from_source_ids": [
+          "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
+        ],
+        "area_sqm_declared": 75000,
+        "building_status": "concept_suggestion",
+        "usage_note": "概念建议建筑基底，合计285,000平方米；非审定建筑规模，待现状建筑调查与控规确认。"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.344,
+              39.9446
+            ],
+            [
+              116.3525,
+              39.9446
+            ],
+            [
+              116.3525,
+              39.9492
+            ],
+            [
+              116.344,
+              39.9492
+            ],
+            [
+              116.344,
+              39.9446
             ]
           ]
         ]

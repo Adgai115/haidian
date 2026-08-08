@@ -3,53 +3,51 @@
   "assumptions": [
     {
       "id": "A-BOUNDARY-001",
-      "status": "pending_official_replacement",
-      "statement": "All spatial layers use provisional boundaries from brief/site-package/geometry/provisional_boundaries.geojson. Official redline polygons are not yet published.",
-      "impact": "Area calculations, land-use ratios, and building footprints are indicative only. All must be recalculated after official boundary replacement."
+      "status": "active_constraint",
+      "statement": "总体设计范围（PROV-SITE-001）、统筹研究范围与三处重点区域（PROV-KEY-001/002/003）均基于公开公告文字四至与面积约束生成的 provisional boundary，非官方红线。",
+      "impact": "所有面积、比例、图层和指标均为临时设计讨论值；官方 boundary 或 cleared CAD/GIS/PDF 发布后，site boundary、key areas、land use、buildings、roads、green space、public space、phasing 与 metrics 必须整体重算，不能只替换单个文件。"
     },
     {
       "id": "A-CONTROLS-001",
       "status": "pending_professional_confirmation",
-      "statement": "Detailed regulatory controls, road redlines, ownership, municipal utilities, building heights, FAR, and engineering constraints must be confirmed from official attachments before statutory use.",
-      "impact": "The package can be reviewed as a formal AI submission for concept design; statutory controls still need professional confirmation."
+      "statement": "详细控规指标（容积率、建筑高度、建筑密度、退线）、道路红线、权属、市政管线与工程约束须以官方附件确认后方可用于法定用途。",
+      "impact": "本包可作为 formal AI 提交接受审查，但法定控规结论仍须专业确认；凡缺少官方条件的结论一律降级为待确认事项。"
     },
     {
-      "id": "A-CULTURAL-001",
-      "status": "design_assumption",
-      "statement": "Cultural heritage assets (Jingzhang Railway relics, Zhongguancun innovation history) are referenced from public knowledge and official announcement text, not from protected heritage surveys.",
-      "impact": "Heritage-themed design proposals are conceptual recommendations, not heritage impact assessments."
+      "id": "A-BUILDING-001",
+      "status": "concept_suggestion",
+      "statement": "建筑基底总面积 285,000 平方米为概念建议值（BLDG-001/002/003），不是审定建筑规模。",
+      "impact": "缺少现状建筑、权属与控规条件时，不得把该值解释为批准建设量；正式深化需以现状建筑调查与控规为准。"
     },
     {
-      "id": "A-AI-001",
-      "status": "design_assumption",
-      "statement": "AI scenario cards describe future technology applications based on current trends. Technology maturity timelines are indicative.",
-      "impact": "Scenario feasibility requires separate technical validation and regulatory approval before implementation."
+      "id": "A-FAR-001",
+      "status": "pending_professional_confirmation",
+      "statement": "容积率（floor_area_ratio）为 unknown：官方控规与正式边界均未公开，无法计算审定容积率。",
+      "impact": "指标体系中列为 unknown，原因与前置条件已记录；不得以推测值填充。"
     },
     {
-      "id": "A-ENTERPRISE-001",
-      "status": "design_assumption",
-      "statement": "No specific enterprise names, investment amounts, or financial commitments are stated. Industry ecosystem references are based on public information about Haidian district.",
-      "impact": "Industry strategy is a framework recommendation, not an implementation plan."
-    }
-  ],
-  "risks": [
-    {
-      "id": "R-BOUNDARY",
-      "severity": "high",
-      "description": "Provisional boundary replacement will require full recalculation of all geometry, metrics, and spatial analysis.",
-      "mitigation": "All files are structured for easy recalculation. Self-check flags provisional status."
+      "id": "A-RATIOS-001",
+      "status": "concept_suggestion",
+      "statement": "绿地率 0.15 与公共空间比例 0.08 为方案概念目标，绿地/公共空间面积按目标比例与 provisional 边界概念对齐。",
+      "impact": "仅作设计讨论与展示，不构成法定绿地率或公共空间指标；官方边界与绿地系统确定后必须重算。"
     },
     {
-      "id": "R-CONTROL-DEPTH",
-      "severity": "medium",
-      "description": "Without official regulatory plan data, the submission cannot demonstrate full regulatory compliance depth.",
-      "mitigation": "Compliance matrix explicitly marks items as concept_pending_official_data."
+      "id": "A-DATA-001",
+      "status": "active_constraint",
+      "statement": "缺失官方资料：official boundary、重点区 polygon、控规、道路红线、地块权属、现状建筑、市政、文保与公共服务设施资料尚未公开（见 missing_data_checklist.csv）。",
+      "impact": "凡依赖上述资料的结论（拆改留、强度、退线、管线、消防、文保控制线）一律写为待确认事项，不得编造审定结论。"
     },
     {
-      "id": "R-FIGURES",
-      "severity": "low",
-      "description": "Figure PNGs and PDF drawings are scaffold placeholders requiring professional graphic production.",
-      "mitigation": "HTML visualization provides interactive content; figures are marked as placeholder."
+      "id": "A-OPERATION-001",
+      "status": "concept_suggestion",
+      "statement": "全球AI创新活动、开发者社区运营、场景开放日、朝圣路线与三处地标节点均为概念建议/参考方案，供专业团队深化研究。",
+      "impact": "不得写成已确定的政府活动、实施安排或获批设施；运营对象、频率、责任边界与风险在正文中说明。"
+    },
+    {
+      "id": "A-REVIEW-001",
+      "status": "verified",
+      "statement": "组织方数据缺口（provisional boundary）不阻断内容评分；本包以'临时边界+精度警示+待正式数据复算'状态提交。",
+      "impact": "可进入内容评分；若官方 polygons 更新，agent 须重新运行脚手架、自检和图纸/HTML 生成。"
     }
   ]
 }

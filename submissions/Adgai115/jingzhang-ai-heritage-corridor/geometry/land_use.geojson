@@ -1,6 +1,6 @@
 {
   "type": "FeatureCollection",
-  "name": "land_use_topology_partition",
+  "name": "jingzhang_land_use_partition",
   "features": [
     {
       "type": "Feature",
@@ -8,12 +8,18 @@
       "properties": {
         "id": "LU-001",
         "layer": "LAND_USE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
         "land_use_code": "0802",
-        "name_zh": "AI研发创新用地",
-        "area_sqm_declared": 2674562.492
+        "name_zh": "AI研发创新用地（科研）",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "official_boundary": false,
+        "geometry_role": "provisional_constraint",
+        "source_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+        "derived_from_source_ids": [
+          "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
+        ],
+        "area_sqm_declared": 3200000,
+        "usage_note": "概念建议用地分区，基于 provisional boundary 划分；官方边界与控规发布后须重算。"
       },
       "geometry": {
         "type": "Polygon",
@@ -57,12 +63,18 @@
       "properties": {
         "id": "LU-002",
         "layer": "LAND_USE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
         "land_use_code": "1401",
-        "name_zh": "公园绿地与开敞空间",
-        "area_sqm_declared": 2589339.239
+        "name_zh": "公园绿地与开敞空间（绿地）",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "official_boundary": false,
+        "geometry_role": "provisional_constraint",
+        "source_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+        "derived_from_source_ids": [
+          "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
+        ],
+        "area_sqm_declared": 2600000,
+        "usage_note": "概念建议用地分区，基于 provisional boundary 划分；官方边界与控规发布后须重算。"
       },
       "geometry": {
         "type": "Polygon",
@@ -98,12 +110,18 @@
       "properties": {
         "id": "LU-003",
         "layer": "LAND_USE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
         "land_use_code": "05",
-        "name_zh": "产业服务与商业服务用地",
-        "area_sqm_declared": 3366138.181
+        "name_zh": "产业服务与商业服务用地（商业）",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "official_boundary": false,
+        "geometry_role": "provisional_constraint",
+        "source_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+        "derived_from_source_ids": [
+          "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
+        ],
+        "area_sqm_declared": 3000000,
+        "usage_note": "概念建议用地分区，基于 provisional boundary 划分；官方边界与控规发布后须重算。"
       },
       "geometry": {
         "type": "Polygon",
@@ -139,17 +157,31 @@
       "properties": {
         "id": "LU-004",
         "layer": "LAND_USE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
         "land_use_code": "0702",
-        "name_zh": "社区服务与配套用地",
-        "area_sqm_declared": 2782792.823
+        "name_zh": "社区服务与配套用地（社区）",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "official_boundary": false,
+        "geometry_role": "provisional_constraint",
+        "source_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+        "derived_from_source_ids": [
+          "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
+        ],
+        "area_sqm_declared": 2600000,
+        "usage_note": "概念建议用地分区，基于 provisional boundary 划分；官方边界与控规发布后须重算。"
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
+            [
+              116.351244,
+              39.939
+            ],
+            [
+              116.351244,
+              40.0265
+            ],
             [
               116.3553,
               40.0265
@@ -169,14 +201,6 @@
             [
               116.351244,
               39.939
-            ],
-            [
-              116.351244,
-              40.0265
-            ],
-            [
-              116.3553,
-              40.0265
             ]
           ]
         ]

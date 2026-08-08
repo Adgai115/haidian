@@ -9,8 +9,17 @@
       "review_status": "addressed",
       "proposal_sections": [
         "设计依据与资料清单",
+        "三层范围工作框架",
+        "统筹研究范围产业与未来城市研究",
         "总体设计范围城市更新与控规深度城市设计",
-        "指标体系、面积复算与合规矩阵"
+        "重点区域详细设计",
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "用地、建筑规模与拆改留方案",
+        "交通、轨道、市政与公共服务设施",
+        "蓝绿空间、公共空间与城市风貌",
+        "更新项目清单、实施政策与分期计划",
+        "指标体系、面积复算与合规矩阵",
+        "风险、版权与合规说明"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
@@ -24,6 +33,7 @@
         "geometry/roads.geojson",
         "geometry/green_space.geojson",
         "geometry/public_space.geojson",
+        "geometry/constraints.geojson",
         "geometry/phasing.geojson"
       ],
       "metric_refs": [
@@ -31,7 +41,11 @@
         "building_footprint_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "scenario_card_count",
+        "persona_count",
+        "landmark_count",
+        "case_study_count"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -43,13 +57,24 @@
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-BUILDING-001",
+        "A-FAR-001",
+        "A-RATIOS-001",
+        "A-DATA-001",
+        "A-OPERATION-001",
+        "A-REVIEW-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
         "KEY_AREAS_TRUST",
+        "GEOMETRY_ROLE_MARKING",
         "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC"
+        "METRICS_CONSISTENCY",
+        "TASK_COVERAGE",
+        "VISUAL_STATIC",
+        "PROFESSIONAL_EVIDENCE"
       ],
       "evidence_summary_zh": "本条标准响应通过 proposal.md 正文引用、A3/A0 图纸、GeoJSON 图层、metrics.json 指标和自检项共同证明。"
     },
@@ -61,8 +86,17 @@
       "review_status": "addressed",
       "proposal_sections": [
         "设计依据与资料清单",
+        "三层范围工作框架",
+        "统筹研究范围产业与未来城市研究",
         "总体设计范围城市更新与控规深度城市设计",
-        "指标体系、面积复算与合规矩阵"
+        "重点区域详细设计",
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "用地、建筑规模与拆改留方案",
+        "交通、轨道、市政与公共服务设施",
+        "蓝绿空间、公共空间与城市风貌",
+        "更新项目清单、实施政策与分期计划",
+        "指标体系、面积复算与合规矩阵",
+        "风险、版权与合规说明"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
@@ -76,6 +110,7 @@
         "geometry/roads.geojson",
         "geometry/green_space.geojson",
         "geometry/public_space.geojson",
+        "geometry/constraints.geojson",
         "geometry/phasing.geojson"
       ],
       "metric_refs": [
@@ -83,7 +118,11 @@
         "building_footprint_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "scenario_card_count",
+        "persona_count",
+        "landmark_count",
+        "case_study_count"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -95,13 +134,24 @@
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-BUILDING-001",
+        "A-FAR-001",
+        "A-RATIOS-001",
+        "A-DATA-001",
+        "A-OPERATION-001",
+        "A-REVIEW-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
         "KEY_AREAS_TRUST",
+        "GEOMETRY_ROLE_MARKING",
         "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC"
+        "METRICS_CONSISTENCY",
+        "TASK_COVERAGE",
+        "VISUAL_STATIC",
+        "PROFESSIONAL_EVIDENCE"
       ],
       "evidence_summary_zh": "本条标准响应通过 proposal.md 正文引用、A3/A0 图纸、GeoJSON 图层、metrics.json 指标和自检项共同证明。"
     },
@@ -113,8 +163,17 @@
       "review_status": "addressed",
       "proposal_sections": [
         "设计依据与资料清单",
+        "三层范围工作框架",
+        "统筹研究范围产业与未来城市研究",
         "总体设计范围城市更新与控规深度城市设计",
-        "指标体系、面积复算与合规矩阵"
+        "重点区域详细设计",
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "用地、建筑规模与拆改留方案",
+        "交通、轨道、市政与公共服务设施",
+        "蓝绿空间、公共空间与城市风貌",
+        "更新项目清单、实施政策与分期计划",
+        "指标体系、面积复算与合规矩阵",
+        "风险、版权与合规说明"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
@@ -128,6 +187,7 @@
         "geometry/roads.geojson",
         "geometry/green_space.geojson",
         "geometry/public_space.geojson",
+        "geometry/constraints.geojson",
         "geometry/phasing.geojson"
       ],
       "metric_refs": [
@@ -135,7 +195,11 @@
         "building_footprint_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "scenario_card_count",
+        "persona_count",
+        "landmark_count",
+        "case_study_count"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -147,13 +211,24 @@
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-BUILDING-001",
+        "A-FAR-001",
+        "A-RATIOS-001",
+        "A-DATA-001",
+        "A-OPERATION-001",
+        "A-REVIEW-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
         "KEY_AREAS_TRUST",
+        "GEOMETRY_ROLE_MARKING",
         "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC"
+        "METRICS_CONSISTENCY",
+        "TASK_COVERAGE",
+        "VISUAL_STATIC",
+        "PROFESSIONAL_EVIDENCE"
       ],
       "evidence_summary_zh": "本条标准响应通过 proposal.md 正文引用、A3/A0 图纸、GeoJSON 图层、metrics.json 指标和自检项共同证明。"
     },
@@ -165,8 +240,17 @@
       "review_status": "addressed",
       "proposal_sections": [
         "设计依据与资料清单",
+        "三层范围工作框架",
+        "统筹研究范围产业与未来城市研究",
         "总体设计范围城市更新与控规深度城市设计",
-        "指标体系、面积复算与合规矩阵"
+        "重点区域详细设计",
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "用地、建筑规模与拆改留方案",
+        "交通、轨道、市政与公共服务设施",
+        "蓝绿空间、公共空间与城市风貌",
+        "更新项目清单、实施政策与分期计划",
+        "指标体系、面积复算与合规矩阵",
+        "风险、版权与合规说明"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
@@ -180,6 +264,7 @@
         "geometry/roads.geojson",
         "geometry/green_space.geojson",
         "geometry/public_space.geojson",
+        "geometry/constraints.geojson",
         "geometry/phasing.geojson"
       ],
       "metric_refs": [
@@ -187,7 +272,11 @@
         "building_footprint_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "scenario_card_count",
+        "persona_count",
+        "landmark_count",
+        "case_study_count"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -199,13 +288,24 @@
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-BUILDING-001",
+        "A-FAR-001",
+        "A-RATIOS-001",
+        "A-DATA-001",
+        "A-OPERATION-001",
+        "A-REVIEW-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
         "KEY_AREAS_TRUST",
+        "GEOMETRY_ROLE_MARKING",
         "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC"
+        "METRICS_CONSISTENCY",
+        "TASK_COVERAGE",
+        "VISUAL_STATIC",
+        "PROFESSIONAL_EVIDENCE"
       ],
       "evidence_summary_zh": "本条标准响应通过 proposal.md 正文引用、A3/A0 图纸、GeoJSON 图层、metrics.json 指标和自检项共同证明。"
     },
@@ -217,8 +317,17 @@
       "review_status": "addressed",
       "proposal_sections": [
         "设计依据与资料清单",
+        "三层范围工作框架",
+        "统筹研究范围产业与未来城市研究",
         "总体设计范围城市更新与控规深度城市设计",
-        "指标体系、面积复算与合规矩阵"
+        "重点区域详细设计",
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "用地、建筑规模与拆改留方案",
+        "交通、轨道、市政与公共服务设施",
+        "蓝绿空间、公共空间与城市风貌",
+        "更新项目清单、实施政策与分期计划",
+        "指标体系、面积复算与合规矩阵",
+        "风险、版权与合规说明"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
@@ -232,6 +341,7 @@
         "geometry/roads.geojson",
         "geometry/green_space.geojson",
         "geometry/public_space.geojson",
+        "geometry/constraints.geojson",
         "geometry/phasing.geojson"
       ],
       "metric_refs": [
@@ -239,7 +349,11 @@
         "building_footprint_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "scenario_card_count",
+        "persona_count",
+        "landmark_count",
+        "case_study_count"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -251,13 +365,24 @@
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-BUILDING-001",
+        "A-FAR-001",
+        "A-RATIOS-001",
+        "A-DATA-001",
+        "A-OPERATION-001",
+        "A-REVIEW-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
         "KEY_AREAS_TRUST",
+        "GEOMETRY_ROLE_MARKING",
         "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC"
+        "METRICS_CONSISTENCY",
+        "TASK_COVERAGE",
+        "VISUAL_STATIC",
+        "PROFESSIONAL_EVIDENCE"
       ],
       "evidence_summary_zh": "本条标准响应通过 proposal.md 正文引用、A3/A0 图纸、GeoJSON 图层、metrics.json 指标和自检项共同证明。"
     },
@@ -269,8 +394,17 @@
       "review_status": "data_gap",
       "proposal_sections": [
         "设计依据与资料清单",
+        "三层范围工作框架",
+        "统筹研究范围产业与未来城市研究",
         "总体设计范围城市更新与控规深度城市设计",
-        "指标体系、面积复算与合规矩阵"
+        "重点区域详细设计",
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "用地、建筑规模与拆改留方案",
+        "交通、轨道、市政与公共服务设施",
+        "蓝绿空间、公共空间与城市风貌",
+        "更新项目清单、实施政策与分期计划",
+        "指标体系、面积复算与合规矩阵",
+        "风险、版权与合规说明"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
@@ -284,6 +418,7 @@
         "geometry/roads.geojson",
         "geometry/green_space.geojson",
         "geometry/public_space.geojson",
+        "geometry/constraints.geojson",
         "geometry/phasing.geojson"
       ],
       "metric_refs": [
@@ -291,7 +426,11 @@
         "building_footprint_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "scenario_card_count",
+        "persona_count",
+        "landmark_count",
+        "case_study_count"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -303,13 +442,24 @@
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-BUILDING-001",
+        "A-FAR-001",
+        "A-RATIOS-001",
+        "A-DATA-001",
+        "A-OPERATION-001",
+        "A-REVIEW-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
         "KEY_AREAS_TRUST",
+        "GEOMETRY_ROLE_MARKING",
         "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC"
+        "METRICS_CONSISTENCY",
+        "TASK_COVERAGE",
+        "VISUAL_STATIC",
+        "PROFESSIONAL_EVIDENCE"
       ],
       "evidence_summary_zh": "本条标准响应通过 proposal.md 正文引用、A3/A0 图纸、GeoJSON 图层、metrics.json 指标和自检项共同证明。"
     }

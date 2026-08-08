@@ -1,57 +1,161 @@
 {
   "type": "FeatureCollection",
-  "name": "constraints_jingzhang_heritage",
-  "metadata": {
-    "coordinate_reference_system": "EPSG:4326",
-    "official_boundary": false,
-    "source_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605"
-  },
+  "name": "jingzhang_constraints_provisional",
   "features": [
     {
       "type": "Feature",
-      "id": "CONST-001",
+      "id": "CONSTRAINTS-001",
       "properties": {
-        "id": "CONST-001",
-        "layer": "HERITAGE_PROTECTION",
-        "name_zh": "京张铁路遗址保护带",
+        "id": "CONSTRAINTS-001",
+        "layer": "CONSTRAINT",
+        "constraint_type": "heritage_and_rail_corridor",
+        "name_zh": "京张遗址公园文保与轨道控制廊道（待确认）",
         "source_type": "agent_inferred_from_public_data",
-        "confidence": "medium",
+        "confidence": "low",
         "official_boundary": false,
         "geometry_role": "provisional_constraint",
-        "description": "京张铁路遗址公园沿线文化保护概念范围，具体保护范围待文物部门确认",
-        "source_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605"
+        "source_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+        "derived_from_source_ids": [
+          "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
+        ],
+        "status": "pending_official_confirmation",
+        "usage_note": "约束条件为概念示意，文保、轨道与控规控制线均待官方资料确认。"
       },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [[
-          [116.342, 39.944],
-          [116.345, 39.944],
-          [116.345, 40.026],
-          [116.342, 40.026],
-          [116.342, 39.944]
-        ]]
+        "coordinates": [
+          [
+            [
+              116.3448,
+              39.94
+            ],
+            [
+              116.3452,
+              39.94
+            ],
+            [
+              116.3452,
+              40.025
+            ],
+            [
+              116.3448,
+              40.025
+            ],
+            [
+              116.3448,
+              39.94
+            ]
+          ]
+        ]
       }
     },
     {
       "type": "Feature",
-      "id": "CONST-002",
+      "id": "CONSTRAINTS-002",
       "properties": {
-        "id": "CONST-002",
-        "layer": "REGULATORY_CONTROL",
-        "name_zh": "轨道站点影响范围",
+        "id": "CONSTRAINTS-002",
+        "layer": "CONSTRAINT",
+        "constraint_type": "metro_station_integration",
+        "name_zh": "五道口—清华东路西口—大钟寺站轨道一体化控制区（待确认）",
         "source_type": "agent_inferred_from_public_data",
-        "confidence": "medium",
+        "confidence": "low",
         "official_boundary": false,
         "geometry_role": "provisional_constraint",
-        "description": "西二旗、五道口、知春路、大钟寺等轨道站点500米影响范围（概念建议）",
-        "source_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605"
+        "source_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+        "derived_from_source_ids": [
+          "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
+        ],
+        "status": "pending_official_confirmation",
+        "usage_note": "约束条件为概念示意，文保、轨道与控规控制线均待官方资料确认。"
       },
       "geometry": {
-        "type": "MultiPolygon",
+        "type": "Polygon",
         "coordinates": [
-          [[[116.344, 40.009], [116.350, 40.009], [116.350, 40.015], [116.344, 40.015], [116.344, 40.009]]],
-          [[[116.344, 39.985], [116.350, 39.985], [116.350, 39.991], [116.344, 39.991], [116.344, 39.985]]],
-          [[[116.344, 39.946], [116.350, 39.946], [116.350, 39.952], [116.344, 39.952], [116.344, 39.946]]]
+          [
+            [
+              116.3422,
+              39.9455
+            ],
+            [
+              116.355,
+              39.9455
+            ],
+            [
+              116.355,
+              39.9495
+            ],
+            [
+              116.3422,
+              39.9495
+            ],
+            [
+              116.3422,
+              39.9455
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CONSTRAINTS-003",
+      "properties": {
+        "id": "CONSTRAINTS-003",
+        "layer": "CONSTRAINT",
+        "constraint_type": "pending_regulatory_controls",
+        "name_zh": "待确认控规条件与道路红线范围（整体）",
+        "source_type": "agent_inferred_from_public_data",
+        "confidence": "low",
+        "official_boundary": false,
+        "geometry_role": "provisional_constraint",
+        "source_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+        "derived_from_source_ids": [
+          "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
+        ],
+        "status": "pending_official_confirmation",
+        "usage_note": "约束条件为概念示意，文保、轨道与控规控制线均待官方资料确认。"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3407,
+              39.939
+            ],
+            [
+              116.3553,
+              39.939
+            ],
+            [
+              116.3553,
+              39.965
+            ],
+            [
+              116.3533,
+              39.99
+            ],
+            [
+              116.3553,
+              40.0265
+            ],
+            [
+              116.3427,
+              40.0265
+            ],
+            [
+              116.3417,
+              40.006
+            ],
+            [
+              116.3397,
+              39.975
+            ],
+            [
+              116.3407,
+              39.939
+            ]
+          ]
         ]
       }
     }

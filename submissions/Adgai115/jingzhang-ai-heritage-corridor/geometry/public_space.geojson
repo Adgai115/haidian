@@ -1,6 +1,6 @@
 {
   "type": "FeatureCollection",
-  "name": "public_space_scaffold",
+  "name": "jingzhang_public_space_concept",
   "features": [
     {
       "type": "Feature",
@@ -8,35 +8,87 @@
       "properties": {
         "id": "PUBLIC-001",
         "layer": "PUBLIC_SPACE",
+        "name_zh": "京张智脉公共空间主网络（概念）",
         "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "name_zh": "公共活动界面",
-        "area_sqm_declared": 836345.643
+        "confidence": "low",
+        "official_boundary": false,
+        "geometry_role": "provisional_constraint",
+        "source_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+        "derived_from_source_ids": [
+          "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
+        ],
+        "area_sqm_declared": 700000,
+        "usage_note": "概念公共空间，面积按公共空间比例0.08目标概念对齐；官方边界确定后重算。"
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.34734399999999,
-              39.967
+              116.3458,
+              39.945
             ],
             [
-              116.34734399999999,
-              40.00025
+              116.3467,
+              39.945
             ],
             [
-              116.349996,
-              40.00025
+              116.3467,
+              40.019
             ],
             [
-              116.349996,
-              39.967
+              116.3458,
+              40.019
             ],
             [
-              116.34734399999999,
-              39.967
+              116.3458,
+              39.945
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PUBLIC-002",
+      "properties": {
+        "id": "PUBLIC-002",
+        "layer": "PUBLIC_SPACE",
+        "name_zh": "大钟寺站四象限步行连通节点（概念）",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "official_boundary": false,
+        "geometry_role": "provisional_constraint",
+        "source_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+        "derived_from_source_ids": [
+          "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
+        ],
+        "area_sqm_declared": 213026.031,
+        "usage_note": "概念公共空间，面积按公共空间比例0.08目标概念对齐；官方边界确定后重算。"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3442,
+              39.9446
+            ],
+            [
+              116.3505,
+              39.9446
+            ],
+            [
+              116.3505,
+              39.9492
+            ],
+            [
+              116.3442,
+              39.9492
+            ],
+            [
+              116.3442,
+              39.9446
             ]
           ]
         ]
